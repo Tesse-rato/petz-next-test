@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={inter.className}>
         <Containers.Header />
         <Component {...pageProps} />
+        <Containers.Footer />
       </div>
     </Containers.BaseHTML>
   );

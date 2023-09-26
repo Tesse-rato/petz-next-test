@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.text {
+  max-width: 408px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
