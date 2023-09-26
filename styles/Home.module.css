@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  /* height: calc(100vh - 72px - 94px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backImage {
+  object-fit: cover;
+}
+
+.text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  text-align: center;
+  position: absolute;
+  max-width: 509px;
+  color: white;
+}
