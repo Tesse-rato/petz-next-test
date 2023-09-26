@@ -1,12 +1,18 @@
 import { Container, ButtonsContainer } from "./styles";
 import { Buttons } from "../..";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
+
   return (
     <Container>
-      <div>LOGO</div>
+      <Buttons.Logo />
       <ButtonsContainer>
-        <Buttons.Secondary style={{ marginRight: "8px" }}>
+        <Buttons.Secondary
+          onClick={() => router.push("/about")}
+          style={{ marginRight: "8px" }}
+        >
           Quem Somos
         </Buttons.Secondary>
         <Buttons.Primary style={{ marginLeft: "8px" }}>

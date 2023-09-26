@@ -9,6 +9,7 @@ export default function PrimaryButton(props: Props) {
       style={{
         backgroundColor: "#E40F0F",
         color: "#FFF",
+        fontWeight: 700,
         ...props.style,
       }}
     >
