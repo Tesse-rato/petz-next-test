@@ -12,7 +12,6 @@ export default function Logo() {
   }, []);
 
   function handleLogo() {
-    console.log("router");
     if (router.pathname === "/") {
       setLogoIsOpen(true);
       setTimeout(() => setLogoIsOpen(false), 5000);

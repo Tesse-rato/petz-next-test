@@ -4,11 +4,16 @@ body {
   margin: 0;
   line-height: 1.6;
   font-size: 18px;
+  height: 100%;
+  width: 100%;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  outline: none;
 }
 
 a {
@@ -33,4 +38,24 @@ p {
 button {
   border: none;
   cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e40f0f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e40f0f;
 }

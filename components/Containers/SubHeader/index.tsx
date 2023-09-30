@@ -24,19 +24,16 @@ export default function SubHeader(props: Props) {
         {Array.isArray(props.breadcrumb) &&
           props.breadcrumb.length > 0 &&
           props.breadcrumb.map((obj, i) => (
-            <>
+            <div key={i}>
               {i > 0 && (
-                <span key={i} style={{ marginRight: "10px", color: "white" }}>
+                <span style={{ marginRight: "10px", color: "white" }}>
                   {">"}
                 </span>
               )}
-              <BreadcrumbText
-                key={"b" + i}
-                onClick={() => router.push(obj.link)}
-              >
+              <BreadcrumbText onClick={() => router.push(obj.link)}>
                 {obj.label}
               </BreadcrumbText>
-            </>
+            </div>
           ))}
       </BreadCrumbContainer>
       <Title>{props.title}</Title>

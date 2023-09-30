@@ -1,8 +1,8 @@
 import Base from "../Base";
 
-type Props = React.HTMLAttributes<HTMLButtonElement>;
+type Props = React.HTMLAttributes<HTMLDivElement>;
 
-export default function PrimaryButton(props: Props) {
+export default function Secondary(props: Props) {
   return (
     <Base
       {...props}

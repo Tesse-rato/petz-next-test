@@ -15,7 +15,10 @@ export default function Header() {
         >
           Quem Somos
         </Buttons.Secondary>
-        <Buttons.Primary style={{ marginLeft: "8px" }}>
+        <Buttons.Primary
+          onClick={() => router.push("/scheduling")}
+          style={{ marginLeft: "8px" }}
+        >
           Agendar Consulta
         </Buttons.Primary>
       </ButtonsContainer>
